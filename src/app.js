@@ -28,11 +28,11 @@ app.use(cors());
 // v1 api routes
 // app.use("/api/user", userRouter);
 app.use('/api/auth', authRouter);
-app.use('/api/admin',adminRoute);
+app.use('/api/admin', adminRoute);
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome Promo tool project 🙌" });
+  res.json("Welcome Promo tool project 🙌");
 });
 
 module.exports = app;
