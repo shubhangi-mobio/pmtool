@@ -1,6 +1,6 @@
 const app = require("./src/app");
 
-const port = process.env.PORT || 3003;
+const port = process.env.PORT ;
 
 //setup server to listen on port 3003
 
