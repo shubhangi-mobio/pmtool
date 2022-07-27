@@ -4,7 +4,7 @@ const AuthController = require("../controllers/auth.controllers");
 const  auth  = require("../middleware/auth.middleware");
 const { LoginValidation, forgotValidation, changeValidation, resetValidation } = require("../validation/user.validation");
 
-route.post("/login", LoginValidation(), AuthController.UserLogin);
+route.get("/login", LoginValidation(), AuthController.UserLogin);
 route.get("/profile", AuthController.UserProfile);
 route.patch("/update/:id", auth, AuthController.UpdateProfile);
 route.post("/forgotpassword", forgotValidation(), AuthController.forgotPassword);
