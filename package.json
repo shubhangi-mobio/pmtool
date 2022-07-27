@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   },
   "engines": {
     "npm": "8.3.1",
